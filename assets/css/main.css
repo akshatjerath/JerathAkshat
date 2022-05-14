@@ -31,6 +31,17 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+.profile--img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('../../images/me.jpg');
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    border: 2px solid #fff;
+    margin-bottom: 30px;
+	/* background-position: 0px -19px; */
+	background-size: cover;
+}
 
 ol, ul {
 	list-style: none;
@@ -3009,7 +3020,8 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 35em;
+			margin: 20px;
 		}
 
 			.spotlights > section > .image img {
@@ -3047,7 +3059,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 40em;
 			-ms-flex: 1;
 		}
 
@@ -3123,6 +3135,12 @@ input, select, textarea {
 			.spotlights > section > .image {
 				height: 50vh;
 				min-height: 15em;
+				margin: 0;
+			}
+			.main--page .spotlights > section > .image{
+				height: auto;
+				background-size: contain;
+    			background-repeat: no-repeat;
 			}
 
 			.spotlights > section > .content {
